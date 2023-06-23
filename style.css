@@ -5,6 +5,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {}
+
 nav {
     background-color: #FCF9ED;
 }
@@ -66,7 +68,7 @@ nav {
 /* ======================== */
 
 .hero-img {
-    height: 30vh;
+    height: 40vh;
 }
 
 .hero-landing {
@@ -110,45 +112,19 @@ nav {
     color: white;
 }
 
-/* ======================== */
-
-.about-landing {
-    /* background-color: #FCF9ED; */
-    /* padding: 100px; */
-}
-
-.hero-header {
-    /* padding-top: 20px; */
-}
-
-.about-landing-text {
-    /* background-color: orange; */
-    /* padding: 0px 200px 0px 200px; */
-}
-
-/* .about-landing-text p {
-    font-size: 18px;
-}
-
-.about-landing-text img {
-    width: 400px;
-    border-radius: 50%;
-} */
-
 /* ==================== ABOUT */
 
 .about {
-    /* background-color: orange; */
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #FCF9ED;
 }
 
 .about-text {
-    /* background-color: orange; */
     line-height: 30px;
     font-size: 18px;
     display: flex;
@@ -156,13 +132,11 @@ nav {
 }
 
 .column-1 {
-    /* background-color: rgba(255, 166, 0, 0.129); */
     width: 65%;
     padding-right: 40px;
 }
 
 .column-2 {
-    /* background-color: red; */
     width: 35%;
 }
 
@@ -174,12 +148,10 @@ nav {
 .portrait {
     width: 350px;
     border-radius: 50%;
-
 }
 
 .about .certifications {
     padding-top: 20px;
-    /* background-color: gold; */
 }
 
 /* =================== */
@@ -190,12 +162,90 @@ nav {
     background-size: cover;
 }
 
+/* ================== SERVICES */
+
+.services {
+    background-color: #FCF9ED;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-list {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.service-item {
+    gap: 20px;
+}
+
+.service-list p,
+a {
+    font-size: 18px;
+}
+
+
+/* DEMO RECIPE */
+
+.demo-recipe {
+    background-image: url("img/salad.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+
+.demo-recipe-box {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.demo-recipe-text {
+    width: 40%;
+    background-color: white;
+    padding: 40px;
+}
+
+.demo-recipe-text p {
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.demo-recipe-text .btn {
+    border-radius: 0;
+    background-color: #474247;
+    color: white;
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.demo-recipe-text .btn:hover {
+    border-radius: 0;
+    background-color: black !Important;
+    color: white;
+}
+
+
 @media (min-width: 992px) {
     .about-text {
         /* background-color: teal; */
         width: 75vw;
-
     }
+
+    .service-list {
+        /* background-color: teal; */
+        width: 75vw;
+    }
+
+    .demo-recipe-box {
+        width: 75vw;
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -233,4 +283,25 @@ nav {
         padding-bottom: 40px;
     }
 
+    .portrait {
+        width: 300px;
+        border-radius: 50%;
+    }
+
+    .service-list {
+        /* background-color: teal; */
+        width: 85vw;
+    }
+
+    .service-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .demo-recipe-box {
+        flex-direction: column;
+        width: 85vw;
+    }
 }
