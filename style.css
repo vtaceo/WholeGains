@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    /* background-color: #FCF9ED; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background-color: #FCF9ED;
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+.navbar .container-fluid {
+    flex-direction: column;
+}
+
+.navbar button {
+    width: auto;
+}
+
+.navbar-nav {
+    /* background-color: orange; */
+    padding-top: 20px;
+}
+
+.nav-but .btn {
+    border-radius: 0;
+    background-color: #474247;
+    color: white;
+}
+
+.nav-but .btn:hover {
+    border-radius: 0;
+    background-color: black !Important;
+    color: white;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    opacity: 0;
+    transition: all 0.2s;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #474247;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+.nav-item {
+    font-weight: 600;
+}
+
+
+/* ======================== */
+
+.hero-img {
+    height: 30vh;
+}
+
+.hero-landing {
+    background-image: url("img/granola.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+
+.hero-landing-text {
+    padding: 40px 60px;
+    background-color: white;
+}
+
+.hero-landing-text h1 {
+    padding-bottom: 15px;
+    font-weight: 400;
+}
+
+.hero-landing-text p {
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.hero-landing-text button {
+    background-color: #474247;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+}
+
+.hero-landing .btn {
+    border-radius: 0;
+    background-color: #474247;
+    color: white;
+}
+
+.hero-landing .btn:hover {
+    border-radius: 0;
+    background-color: black !Important;
+    color: white;
+}
+
+/* ======================== */
+
+.about-landing {
+    /* background-color: #FCF9ED; */
+    /* padding: 100px; */
+}
+
+.hero-header {
+    /* padding-top: 20px; */
+}
+
+.about-landing-text {
+    /* background-color: orange; */
+    /* padding: 0px 200px 0px 200px; */
+}
+
+/* .about-landing-text p {
+    font-size: 18px;
+}
+
+.about-landing-text img {
+    width: 400px;
+    border-radius: 50%;
+} */
+
+/* ==================== ABOUT */
+
+.about {
+    /* background-color: orange; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    /* background-color: orange; */
+    line-height: 30px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+}
+
+.column-1 {
+    /* background-color: rgba(255, 166, 0, 0.129); */
+    width: 65%;
+    padding-right: 40px;
+}
+
+.column-2 {
+    /* background-color: red; */
+    width: 35%;
+}
+
+.signature {
+    width: 100px;
+    border-radius: 0;
+}
+
+.portrait {
+    width: 350px;
+    border-radius: 50%;
+
+}
+
+.about .certifications {
+    padding-top: 20px;
+    /* background-color: gold; */
+}
+
+/* =================== */
+
+.landing-3 {
+    background-image: url("img/lower.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-width: 992px) {
+    .about-text {
+        /* background-color: teal; */
+        width: 75vw;
+
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-order {
+        /* background-color: orange; */
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar .container-fluid {
+        flex-direction: row;
+    }
+
+    .about-text {
+        /* background-color: teal; */
+        width: 85vw;
+    }
+
+    .about-text {
+        /* background-color: orange; */
+        flex-direction: column-reverse;
+    }
+
+    .column-1 {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .column-2 {
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .signature {
+        display: none;
+    }
+
+}
