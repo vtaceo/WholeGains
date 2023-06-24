@@ -358,14 +358,14 @@ a {
 @media (max-width: 575.98px) {
     .demo-recipe {
         background-image: url("img/salad.jpg");
-        background-position: center;
-        background-size: cover;
+        background-position: inherit;
         min-height: 60vh;
     }
 
-    .demo-recipe-text {
+    /* .demo-recipe-text {
         width: 100vw;
-    }
+        height: auto;
+    } */
 
     .demo-recipe-text .btn {
         width: 100%;
@@ -394,5 +394,9 @@ a {
     .portrait {
         width: 250px;
         border-radius: 50%;
+    }
+
+    .demo-recipe-text {
+        width: 100vw;
     }
 }
