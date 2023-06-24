@@ -189,6 +189,10 @@ a {
     font-size: 18px;
 }
 
+.service-list a {
+    color: #474247d3;
+}
+
 
 /* DEMO RECIPE */
 
@@ -206,7 +210,7 @@ a {
 }
 
 .demo-recipe-text {
-    width: 40%;
+    /* width: 40%; */
     background-color: white;
     padding: 40px;
 }
@@ -233,12 +237,10 @@ a {
 
 @media (min-width: 992px) {
     .about-text {
-        /* background-color: teal; */
         width: 75vw;
     }
 
     .service-list {
-        /* background-color: teal; */
         width: 75vw;
     }
 
@@ -246,11 +248,14 @@ a {
         width: 75vw;
     }
 
+    .demo-recipe-text {
+        width: 600px;
+    }
+
 }
 
 @media (max-width: 992px) {
     .nav-order {
-        /* background-color: orange; */
         display: flex;
         flex-direction: row;
     }
@@ -260,12 +265,10 @@ a {
     }
 
     .about-text {
-        /* background-color: teal; */
         width: 85vw;
     }
 
     .about-text {
-        /* background-color: orange; */
         flex-direction: column-reverse;
     }
 
@@ -275,7 +278,6 @@ a {
     }
 
     .column-2 {
-        /* background-color: red; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -289,7 +291,6 @@ a {
     }
 
     .service-list {
-        /* background-color: teal; */
         width: 85vw;
     }
 
@@ -303,5 +304,51 @@ a {
     .demo-recipe-box {
         flex-direction: column;
         width: 85vw;
+    }
+
+    .demo-recipe-text {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .demo-recipe {
+        background-image: url("img/salad.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 60vh;
+    }
+
+    .demo-recipe-text {
+        width: 100vw;
+    }
+
+    .demo-recipe-text .btn {
+        width: 100%;
+    }
+
+    .hero-landing .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 332px) {
+    .hero-landing-text {
+        width: 100vw;
+        height: auto;
+        padding: 50px 20px;
+        /* padding: 40px 60px; */
+        background-color: white;
+    }
+}
+
+@media (max-width: 393px) {
+    .navbar-brand img {
+        width: 125px;
+    }
+
+    .portrait {
+        width: 250px;
+        border-radius: 50%;
     }
 }
