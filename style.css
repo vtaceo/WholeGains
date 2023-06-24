@@ -2,6 +2,8 @@
 
 * {
     /* background-color: #FCF9ED; */
+    padding: 0;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -200,7 +202,7 @@ a {
     background-image: url("img/salad.jpg");
     background-position: center;
     background-size: cover;
-    height: 50vh;
+    min-height: 50vh;
 }
 
 .demo-recipe-box {
@@ -229,6 +231,48 @@ a {
 }
 
 .demo-recipe-text .btn:hover {
+    border-radius: 0;
+    background-color: black !Important;
+    color: white;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #474247;
+    color: white;
+    min-height: 35vh;
+}
+
+.footer-text {
+    text-align: center;
+    /* height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 35vh;
+}
+
+.footer p {
+    padding-bottom: 15px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text .btn {
+    border-radius: 0;
+    color: #474247;
+    background-color: white;
+    width: auto;
+    padding: 10px 20px;
+}
+
+.footer-text .btn:hover {
     border-radius: 0;
     background-color: black !Important;
     color: white;
@@ -316,7 +360,7 @@ a {
         background-image: url("img/salad.jpg");
         background-position: center;
         background-size: cover;
-        height: 60vh;
+        min-height: 60vh;
     }
 
     .demo-recipe-text {
