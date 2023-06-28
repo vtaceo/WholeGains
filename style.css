@@ -358,10 +358,10 @@ a {
 @media (max-width: 575.98px) {
     .demo-recipe {
         background-image: none;
-        /* background-image: url("img/salad.jpg");
+        background-image: url("img/salad-com.jpg");
         background-position: inherit;
-        min-height: 60vh; */
-        background-color: black;
+        /* min-height: 60vh; */
+        /* background-color: black; */
     }
 
     /* .demo-recipe-text {
