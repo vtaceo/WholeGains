@@ -359,7 +359,7 @@ a {
     .demo-recipe {
         background-image: url("img/salad-com.jpg");
         background-position: inherit;
-        /* min-height: 60vh; */
+        height: 50vh;
         /* background-color: black; */
     }
 
