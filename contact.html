@@ -11,6 +11,47 @@
 </head>
 
 <body>
+    <!-- <div class="nav"> -->
+    <!-- <nav>
+            <div class="logo">
+                <h1>WHOLE GAINS</h1>
+            </div>
+            <div class="links">
+                <li>home</li>
+            </div>
+
+        </nav> -->
+
+    <!-- <nav class="navbar navbar-expand-lg">
+        <div class="nav-order container-fluid py-4">
+            <div class="logo text-center">
+                <a class="" href="#">WHOLE</a>
+                <br>
+                <a class="" href="#">GAINS</a>
+            </div>
+            <br>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">SERVICES</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <button class="mx-2">SCHEDULE A CONSULTATION</button>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
     <!-- ============================================ -->
     <!-- ================== MODAL =================== -->
     <!-- ============================================ -->
@@ -32,6 +73,7 @@
         </div>
     </div> -->
 
+    <!-- CONSULTATION MODAL -->
     <div class="modal" tabindex="-1" id="contact-modal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -45,7 +87,7 @@
 
                     <form class="row g-3 needs-validation" novalidate>
                         <div class="">
-                            <label for="validationCustom01" class="form-label">Name</label>
+                            <label for="validationCustom01" class="form-label">First Name</label>
                             <input type="text" class="form-control" id="validationCustom01" value="" required>
                             <!-- <div class="valid-feedback">
                                 Looks good!
@@ -62,7 +104,7 @@
 
 
                         <div class="modal-footer">
-                            <button class="btn" type="submit" data-bs-dismiss="modal" aria-label="Close">SEND</button>
+                            <button class="btn" type="submit">SEND</button>
                         </div>
                     </form>
                 </div>
@@ -70,6 +112,7 @@
         </div>
     </div>
 
+    <!-- NEWSLETTER MODAL -->
     <div class="modal" tabindex="-1" id="newsletter-modal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -94,7 +137,7 @@
 
 
                         <div class="modal-footer">
-                            <button class="btn" type="submit" data-bs-dismiss="modal" aria-label="Close">GET YOUR RECIPE!</button>
+                            <button class="btn" type="submit">GET YOUR RECIPE!</button>
                         </div>
                     </form>
                 </div>
@@ -102,41 +145,25 @@
         </div>
     </div>
 
-    <div class="modal" tabindex="-1" id="register-modal">
+
+    <!-- SUBMIT MODAL -->
+    <div class="modal fade" id="submit-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Register</h5>
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-
                 <div class="modal-body">
-
-
-                    <form class="row g-3 needs-validation" novalidate>
-
-                        <div class="">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                            <!-- <div class="valid-feedback">
-                                Looks good!
-                            </div> -->
-                        </div>
-
-
-                        <div class="modal-footer">
-                            <button class="btn" type="submit" data-bs-dismiss="modal" aria-label="Close">REGISTER</button>
-                        </div>
-                    </form>
+                    Hide this modal and show the first with the button below.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- ON CLICK SUBMIT BUTTON -->
-
-
+    <!-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button> -->
 
 
 
@@ -145,7 +172,7 @@
     <!-- ============================================ -->
     <nav class="navbar navbar-expand-lg  py-4">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="img/logo.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -154,16 +181,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
                     <li class="nav-item px-2">
-                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        <a class="nav-link" aria-current="page" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#about">ABOUT</a>
+                        <a class="nav-link" href="index.html#about">ABOUT</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#services">SERVICES</a>
+                        <a class="nav-link" href="index.html#services">SERVICES</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="contact.html">CONTACT</a>
+                        <a class="nav-link  active" href="contact.html">CONTACT</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
@@ -176,99 +203,49 @@
     </nav>
 
     <!-- ============================================ -->
-    <!-- =============== LANDING HERO =============== -->
+    <!-- =============== CONTACT HERO =============== -->
     <!-- ============================================ -->
-    <div class=" container-fluid hero-landing hero d-flex justify-content-center align-items-center" id="home">
-        <div class="hero-landing-text text-center">
-            <h1>The new you starts now.</h1>
-            <p>Your one-stop shop for tips, tricks, and tools to unlock a healthier you.</p>
-            <button class="btn" data-bs-toggle="modal" data-bs-target="#contact-modal">SCHEDULE A CONSULTATION</button>
-        </div>
-    </div>
+    <div class=" container-fluid contact-landing hero d-flex justify-content-center align-items-center" id="home">
+        <div class="contact-landing-form">
+            <h1 class="text-center">Let's Connect</h1>
+            <p class="text-center">
+                Curious? Hungry? Wanna chat? You came to the right place. Drop me a line.</p>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="">
+                    <label for="validationCustom01" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>
 
+                    <!-- <div class="valid-feedback">
+                        Looks good!
+                    </div> -->
+                    <label for="exampleInputEmail1" class="form-label pt-2">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
 
-    <div class="container-fluid  px-4 py-5 about" id="about">
-        <div class="hero-header pt-5">
-            <h1 class="text-center">Hi, I'm Emilia.</h1>
-        </div>
-        <div class="about-text py-5">
-            <div class=" column-1">
-                <p>After spending nearly 10 years of my adult life biting the hooks of infomercials and programs promising 'easy/simple results' and being consistently disappointed–things got personal.</p>
-                <p class="">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                <p>There had to be a way to improve my health and self-image without making drastic, expensive changes to my diet and activity.</p>
-                <p>I started Whole Gains to not only share what I learned about myself as a licensed nutritionist and professional life-coach over the past 10 years, but to work with people like me, looking for a practical way to spark positve change in their lives.</p>
-                <img src="img/name.png" alt="" class="signature pt-4">
-            </div>
-            <div class=" column-2">
-                <img src="img/portrait.jpg" class="d-block mx-lg-auto img-fluid portrait" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-                <div class="certifications text-center">
-                    <p>LICENSED NUTRITIONIST</p>
-                    <p>PROFESSIONAL LIFE-COACH</p>
-                    <p>CERTIFIED DIETICIAN</p>
+                    <label for="validationCustom01" class="form-label pt-2">Comment</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <button class="btn mt-4" type="submit" data-bs-dismiss="modal" aria-label="submit-modal">REGISTER</button>
                 </div>
-            </div>
+
+
+                <div class="modal-footer">
+                    <!-- <button class="btn" data-bs-toggle="modal" data-bs-target="#submit-modal">SCHEDULE A CONSULTATION</button> -->
+                    <!-- <button class="btn" type="submit" data-bs-dismiss="modal" aria-label="submit-modal">REGISTER</button> -->
+                </div>
+            </form>
+            <!-- <button class="btn" data-bs-toggle="modal" data-bs-target="#contact-modal">SCHEDULE A CONSULTATION</button> -->
         </div>
     </div>
 
 
 
-    <!-- ============================================ -->
-    <!-- =============== IMAGE HERO ================= -->
-    <!-- ============================================ -->
-    <div class="hero-img landing-3">
-    </div>
 
-    <!-- ============================================ -->
-    <!-- ================= SERVICES ================= -->
-    <!-- ============================================ -->
-    <div class="container-fluid  px-4 py-5 services" id="services">
-        <div class="hero-header pt-5">
-            <h1 class="text-center">Services</h1>
-            <p class="text-center">I'll work with you, wherever you're at.</p>
-        </div>
-        <div class="service-list py-5 d-flex align-items-center justify-content-center">
-            <div class="service-item">
-                <h2>Beginner</h2>
-                <p>We'll sit down for coffee, lunch, or a simple phone call to chat about you, your story, and what makes you tick.</p>
-                <a href="" data-bs-toggle="modal" data-bs-target="#register-modal">register</a>
-            </div>
-            <div class="service-item">
-                <h2>Intermediate</h2>
-                <p>You've been around the block before and have some big ideas. Let's hone in on ways to simplify and polish for the best results.</p>
-                <a href="" data-bs-toggle="modal" data-bs-target="#register-modal">register</a>
-            </div>
-            <div class="service-item">
-                <h2>Advanced</h2>
-                <p>You have some solid routines that work, but are looking to take things to the next level and optimize your output.</p>
-                <a href="" data-bs-toggle="modal" data-bs-target="#register-modal">register</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- ============================================ -->
-    <!-- ================ DEMO RECIPE =============== -->
-    <!-- ============================================ -->
-    <div class="container-fluid demo-recipe hero d-flex  align-items-center" id="recipe">
-        <div class="demo-recipe-box">
-            <div class="demo-recipe-text">
-                <h1>Simple Salad</h1>
-                <p>This salad is exactly what it's called...Simple. With only 4 ingredients, there's no labor, only love.</p>
-                <button class="btn" data-bs-toggle="modal" data-bs-target="#newsletter-modal">GET THE RECIPE</button>
-            </div>
-            <div class=""></div>
-        </div>
-    </div>
 
     <!-- ============================================ -->
     <!-- ================== FOOTER ================== -->
     <!-- ============================================ -->
-    <div class="container-fluid footer hero d-flex-column">
-        <div class="footer-text">
-            <h1>Let's make your plan.</h1>
-            <p>A description for the headline that looks a little something like this. It's centered.</p>
-            <button class="btn" data-bs-toggle="modal" data-bs-target="#contact-modal">SCHEDULE A CONSULTATION</button>
-        </div>
-        <div>
+    <div class="container-fluid contact-footer hero d-flex-column text-center">
+        <div class="contact-footer-text ">
             <p>© 2023 All Rights Reserved</p>
         </div>
     </div>

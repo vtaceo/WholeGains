@@ -9,6 +9,10 @@
 
 body {}
 
+/* .modal-footer .btn {
+    background-color: green !important;
+} */
+
 nav {
     background-color: #FCF9ED;
 }
@@ -30,13 +34,15 @@ nav {
     padding-top: 20px;
 }
 
-.nav-but .btn {
+.nav-but .btn,
+.modal-footer .btn {
     border-radius: 0;
-    background-color: #474247;
+    background-color: #474247 !important;
     color: white;
 }
 
-.nav-but .btn:hover {
+.nav-but .btn:hover,
+.modal-footer .btn:hover {
     border-radius: 0;
     background-color: black !Important;
     color: white;
@@ -65,6 +71,9 @@ nav {
 .nav-item {
     font-weight: 600;
 }
+
+
+
 
 
 /* ======================== */
@@ -278,6 +287,76 @@ a {
     color: white;
 }
 
+.contact-footer {
+    background-color: #474247;
+    color: white;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-footer p {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* === */
+/* === */
+/* === */
+
+.hero-img {
+    height: 40vh;
+}
+
+.contact-landing {
+    background-image: url("img/contactbg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    /* background-position: 0px -200px; */
+}
+
+.contact-landing-form {
+    width: 80%;
+    height: 80%;
+    padding: 40px 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+.contact-landing-form h1 {
+    padding-bottom: 15px;
+    font-weight: 400;
+}
+
+.contact-landing-form p {
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.contact-landing-form button {
+    background-color: #474247;
+    color: white;
+    border: none;
+    /* padding: 20px 40px; */
+    width: 100%;
+}
+
+.contact-landing .btn {
+    border-radius: 0;
+    background-color: #474247;
+    color: white;
+}
+
+.contact-landing .btn:hover {
+    border-radius: 0;
+    background-color: black !Important;
+    color: white;
+}
+
 
 @media (min-width: 992px) {
     .about-text {
@@ -306,6 +385,18 @@ a {
 
     .navbar .container-fluid {
         flex-direction: row;
+    }
+
+    .nav-link::after {
+        opacity: 0;
+        transition: all 0.2s;
+        content: '';
+        height: 2px;
+        width: auto;
+        background-color: #474247;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 
     .about-text {
@@ -377,16 +468,6 @@ a {
     }
 }
 
-@media (max-width: 332px) {
-    .hero-landing-text {
-        width: 100vw;
-        height: auto;
-        padding: 50px 20px;
-        /* padding: 40px 60px; */
-        background-color: white;
-    }
-}
-
 @media (max-width: 393px) {
     .navbar-brand img {
         width: 125px;
@@ -399,5 +480,35 @@ a {
 
     .demo-recipe-text {
         width: 100vw;
+    }
+}
+
+@media (max-width: 332px) {
+    .hero-landing-text {
+        width: 100vw;
+        height: auto;
+        padding: 50px 20px;
+        /* padding: 40px 60px; */
+        background-color: white;
+    }
+
+    .demo-recipe {
+        /* min-height: 55vh; */
+        max-height: 100vh;
+    }
+
+    .demo-recipe-box {
+        justify-content: center;
+        min-height: 50vh;
+    }
+
+    .demo-recipe-text {}
+
+    .footer {
+        min-height: 50vh;
+    }
+
+    .footer-text {
+        height: 50vh
     }
 }
