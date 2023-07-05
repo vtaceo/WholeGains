@@ -444,6 +444,25 @@ a {
     .demo-recipe-text {
         width: 90vw;
     }
+
+    .contact-landing {
+        /* background-image: url("img/contactbg.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; */
+        height: 80vh;
+        /* background-position: 0px -200px; */
+    }
+
+    .contact-landing-form {
+        width: 85%;
+        height: auto;
+        padding: 40px 60px;
+        background-color: rgb(255, 255, 255);
+    }
+
+
+
 }
 
 @media (max-width: 575.98px) {
@@ -466,6 +485,32 @@ a {
     .hero-landing .btn {
         width: 100%;
     }
+
+    .contact-landing {
+        height: 80vh;
+    }
+
+    .contact-landing-form {
+        width: 100%;
+        height: auto;
+        padding: 25px 30px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .contact-footer {
+        background-color: #474247;
+        color: white;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-footer p {
+        padding: 0;
+        margin: 0;
+    }
+
 }
 
 @media (max-width: 393px) {
@@ -511,4 +556,21 @@ a {
     .footer-text {
         height: 50vh
     }
+
+    .contact-landing {
+        /* background-image: url("img/contactbg.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; */
+        height: 100vh;
+        /* background-position: 0px -200px; */
+    }
+
+    .contact-landing-form {
+        width: 100%;
+        height: auto;
+        padding: 20px 15px;
+        background-color: rgb(255, 255, 255);
+    }
+
 }
